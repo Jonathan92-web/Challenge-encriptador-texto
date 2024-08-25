@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-light p-lg-3" data-bs-theme="light">
+        <div class="container">
+            <a class="navbar-brand p-0 m-0" href="#"><img src="./img/Logo@2x.png" alt="logo-alura" width="120"
+                    height="48"></a>
+            <h1 class=" m-0  text-center">ENCRIPTADOR DE TEXTO</h1>
+        </div>
+    </header>
+    <main class="container mb-4 ">
+        <section class="row row-cols-1">
+            <div class=" mt-4 col-sm-6 ">
+                <textarea class="form-control mt-4 " id="texto-entrada" rows="12"
+                    placeholder="ingresa el texto que deseas encriptar o desencriptar..."></textarea>
+                <button id="encriptar" type="button" class="btn btn-outline-primary mt-4">Encriptar</button>
+                <button id="desencriptar" type="button" class="btn btn-outline-secondary mt-4">Desencriptar</button>
+
+            </div>
+            <div class="col-sm-6">
+                <textarea id="texto-salida" class="form-control mt-5" rows="12"
+                    placeholder="Ningún mensaje fue encontrado"></textarea>
+
+                <button onclick="copiarTexto()" type="button" class="btn btn-outline-success mt-4">Copiar texto
+                </button>
+                <button onclick="limpiarTexto()" type="button" class="btn btn-outline-info mt-4">Limpiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3 my-4 ">
+        <p class="text-center text-body border-dark mt-3 " _msttexthash="356304" _msthash="19">© 2024 diseñado
+            por
+            Jonathan
+            Muñoz
+        </p>
+    </footer>
+</body>
+<script src="./scripts/script.js"></script>
+
+</html>
